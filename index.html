@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập JS buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Bài tập về nhà -->
+    <h1>Bài tập về nhà JS buổi 4</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#bt_1">Bài tập 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#bt_2">Bài tập 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#bt_3">Bài tập 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#bt_4">Bài tập 4</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Bài tập 1 -->
+        <div class="tab-pane container active" id="bt_1">
+            <div class="card">
+                <div class="card-header">
+                    Sắp xếp 3 số nguyên theo thứ tự tăng dần
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 1</label>
+                        <input id="num_1" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 2</label>
+                        <input id="num_2" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 3</label>
+                        <input id="num_3" type="text" class="form-control">
+                    </div>
+
+                    <button id="btnTangDan" class="btn btn-success">Sắp xếp</button>
+                </div>
+                <div id="numTD" class="card-footer text-muted"></div>
+            </div>
+        </div>
+
+        <!-- Bài tập 2 -->
+        <div class="tab-pane container fade" id="bt_2">
+            <div class="card">
+                <div class="card-header">
+                    Gửi lời chào cho các thành viên trong gia đình
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Thành viên gia đình</label>
+                        <select id="family" class="form-control">
+                            <option value="">Chọn thành viên</option>
+                            <option value="B">Bố</option>
+                            <option value="M">Mẹ</option>
+                            <option value="A">Anh trai</option>
+                            <option value="E">Em gái</option>
+                        </select>
+                    </div>
+                    <button id="btnChao" class="btn btn-success">Gửi lời chào</button>
+                </div>
+            </div>
+            <div id="chaoGD" class="card-footer text-muted"></div>
+        </div>
+
+        <!-- Bài tập 3 -->
+        <div class="tab-pane container fade" id="bt_3">
+            <div class="card">
+                <div class="card-header">
+                    Tìm số chẵn, số lẻ
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 1</label>
+                        <input id="num_4" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 2</label>
+                        <input id="num_5" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Số nguyên thứ 3</label>
+                        <input id="num_6" type="text" class="form-control">
+                    </div>
+                    <button id="btnSoChanLe" class="btn btn-success">Tìm số chẵn lẻ</button>
+                </div>
+                <div id="numCL" class="card-footer text-muted"></div>
+            </div>
+        </div>
+
+        <!-- Bài tập 4 -->
+        <div class="tab-pane container fade" id="bt_4">
+            <div class="card">
+                <div class="card-header">
+                    Loại tam giác theo chiều dài cạnh
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Cạnh a</label>
+                        <input id="canhA" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Cạnh b</label>
+                        <input id="canhB" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Cạnh c</label>
+                        <input id="canhC" type="text" class="form-control">
+                    </div>
+                    <button id="btnTamGiac" class="btn btn-success">Loại tam giác</button>
+                </div>
+                <div id="loaiTamGiac" class="card-footer text-muted"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Bài tập về nhà thêm -->
+    <h1>Bài tập thêm JS buổi 4</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#btt_1">Bài tập thêm 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#btt_2">Bài tập thêm 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#btt_3">Bài tập thêm 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#btt_4">Bài tập thêm 4</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Bài tập thêm 1 -->
+        <div class="tab-pane container active" id="btt_1">
+            <div class="card">
+                <div class="card-header">
+                    Tìm ngày tháng năm
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Ngày</label>
+                        <input id="ngay" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Tháng</label>
+                        <input id="thang" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Năm</label>
+                        <input id="nam" type="text" class="form-control">
+                    </div>
+
+                    <button id="btnTruoc" class="btn btn-success">Ngày trước</button>
+                    <button id="btnSau" class="btn btn-success">Ngày sau</button>
+                </div>
+                <div id="ngayTruocSau" class="card-footer text-muted"></div>
+            </div>
+        </div>
+
+        <!-- Bài tập thêm 2 -->
+        <div class="tab-pane container fade" id="btt_2">
+            <div class="card">
+                <div class="card-header">
+                    Tìm số ngày trong tháng
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Tháng</label>
+                        <select id="thangNgay" class="form-control">
+                            <option value="">Chọn tháng</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Năm</label>
+                        <input id="namNgay" type="text" class="form-control">
+                    </div>
+
+                    <button id="btnSoNgay" class="btn btn-success">Số ngày</button>
+                </div>
+                <div id="soNgay" class="card-footer text-muted"></div>
+            </div>
+        </div>
+
+        <!-- Bài tập thêm 3 -->
+        <div class="tab-pane container fade" id="btt_3">
+            <div class="card">
+                <div class="card-header">
+                    Đọc số
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Nhập vào số nguyên 3 chữ số</label>
+                        <input id="int" type="text" class="form-control">
+                    </div>
+
+                    <button id="btnInt" class="btn btn-success">Cách đọc</button>
+                </div>
+                <div id="readInt" class="card-footer text-muted"></div>
+            </div>
+        </div>
+
+        <!-- Bài tập thêm 4 -->
+        <div class="tab-pane container fade" id="btt_4">
+            <div class="card">
+                <div class="card-header">
+                    Tìm sinh viên nhà xa nhất
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Sinh viên 1</label>
+                        <input id="ten1" type="text" class="form-control" placeholder="Họ tên">
+                        <input id="x1" type="text" class="form-control" placeholder="Tọa độ x">
+                        <input id="y1" type="text" class="form-control" placeholder="Tọa độ y">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Sinh viên 2</label>
+                        <input id="ten2" type="text" class="form-control" placeholder="Họ tên">
+                        <input id="x2" type="text" class="form-control" placeholder="Tọa độ x">
+                        <input id="y2" type="text" class="form-control" placeholder="Tọa độ y">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Sinh viên 3</label>
+                        <input id="ten3" type="text" class="form-control" placeholder="Họ tên">
+                        <input id="x3" type="text" class="form-control" placeholder="Tọa độ x">
+                        <input id="y3" type="text" class="form-control" placeholder="Tọa độ y">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Nhà trường</label>
+                        <input id="xtr" type="text" class="form-control" placeholder="Tọa độ x">
+                        <input id="ytr" type="text" class="form-control" placeholder="Tọa độ y">
+                    </div>
+
+                    <button id="btnXaNhat" class="btn btn-success">Tìm sinh viên</button>
+                    
+                </div>
+                <div id="tenXaNhat" class="card-footer text-muted"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main JavaScript -->
+    <script src="./js/main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
